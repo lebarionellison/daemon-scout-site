@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080d18">
+<meta name="description" content="Find better-fit prospects for your agency. Get 25 researched prospects with fit reasoning, source links, opportunity angles, and personalized outreach drafts.">
+<title>Daemon Scout | Find Better Prospects</title>
+<style>
+:root{color-scheme:dark;--bg:#080d18;--panel:#101a2a;--line:#24334a;--text:#f4f7ff;--muted:#a7b5c9;--cyan:#6ce9ef;--blue:#8aa8ff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(ellipse at 80% 0%,#142b43 0,transparent 38%),var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,Segoe UI,sans-serif}
+a{color:inherit}
+.wrap{width:min(1080px,calc(100% - 40px));margin:auto}
+nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:23px 0;border-bottom:1px solid #ffffff12}
+.brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:-.4px}
+.logo{display:grid;place-items:center;width:39px;height:39px;border:1px solid #6ce9ef88;border-radius:12px;color:var(--cyan);font-weight:900}
+.navlink{color:var(--muted);text-decoration:none;font-size:14px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 19px;border-radius:10px;text-decoration:none;font-weight:750;border:1px solid transparent;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-2px)}
+.primary{background:var(--cyan);color:#061018}
+.secondary{border-color:#40516a;background:#ffffff06}
+.hero{padding:86px 0 72px;display:grid;grid-template-columns:1.1fr .9fr;gap:54px;align-items:center}
+.eyebrow{display:inline-flex;gap:9px;align-items:center;color:var(--cyan);font-size:12px;font-weight:800;letter-spacing:1.8px;text-transform:uppercase}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 14px var(--cyan)}
+h1{font-size:clamp(42px,5.7vw,68px);line-height:1.04;letter-spacing:-3px;margin:20px 0}
+h1 span{color:var(--cyan)}
+.lead{font-size:18px;color:var(--muted);max-width:600px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin:27px 0 18px}
+.small{font-size:13px;color:var(--muted)}
+.preview{padding:24px;background:linear-gradient(150deg,#15243a,#0d1422);border:1px solid #31425b;border-radius:19px;box-shadow:0 28px 90px #0005}
+.previewtop{display:flex;justify-content:space-between;gap:12px;padding-bottom:18px;border-bottom:1px solid var(--line);font-size:13px}
+.status{color:var(--cyan)}
+.preview h3{margin:21px 0 6px;font-size:18px}
+.preview p{color:var(--muted);font-size:13px;margin:0 0 17px}
+.leadrow{padding:15px 0;border-top:1px solid #ffffff12}
+.leadrow strong{display:block;font-size:14px}
+.leadrow span{font-size:12px;color:var(--muted)}
+.tag{display:inline-block;margin-top:8px;padding:3px 8px;border-radius:6px;background:#6ce9ef12;color:var(--cyan);font-size:11px}
+.note{font-size:11px;color:#8291a8;margin-top:17px}
+section{padding:65px 0;border-top:1px solid #ffffff12}
+.sectionhead{max-width:690px;margin-bottom:30px}
+h2{font-size:clamp(29px,4vw,42px);line-height:1.15;letter-spacing:-1.4px;margin:13px 0}
+.sectionhead p,.card p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{padding:23px;border:1px solid var(--line);border-radius:14px;background:#ffffff04}
+.card .num{color:var(--cyan);font-weight:850;font-size:13px;letter-spacing:1px}
+.card h3{margin:12px 0 6px;font-size:18px}
+.card p{margin:0;font-size:14px}
+.deliver{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.item{padding:15px;border:1px solid var(--line);border-radius:11px;background:#ffffff04}
+.item b{display:block;margin-bottom:3px}
+.item span{font-size:13px;color:var(--muted)}
+.check{color:var(--cyan);margin-right:8px}
+.offer{padding:34px;border:1px solid #527f91;border-radius:18px;background:linear-gradient(130deg,#132a3b,#101827);display:grid;grid-template-columns:1fr auto;align-items:center;gap:24px}
+.offer p{color:var(--muted);max-width:650px}
+details{border-bottom:1px solid var(--line);padding:17px 0}
+summary{font-weight:700;cursor:pointer}
+details p{color:var(--muted);margin-bottom:0}
+footer{padding:32px 0;color:var(--muted);font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding:58px 0}.grid{grid-template-columns:1fr}.deliver{grid-template-columns:1fr}.offer{grid-template-columns:1fr;padding:25px}h1{letter-spacing:-2px}.wrap{width:min(100% - 30px,1080px)}}
+</style>
+</head>
+<body>
+<header class="wrap">
+<nav>
+<a class="brand" href="#" aria-label="Daemon Scout home" style="text-decoration:none"><span class="logo">DS</span><span>DAEMON SCOUT</span></a>
+<a class="navlink" href="#process">How it works</a>
+<a class="btn secondary" href="mailto:barry.ellison@comcast.net?subject=Daemon%20Scout%2025-Lead%20Pilot">Request a pilot ↗</a>
+</nav>
+</header>
+
+<main>
+<div class="wrap hero">
+<div>
+<div class="eyebrow"><span class="dot"></span> Prospect Research &amp; Qualification</div>
+<h1>Find Better Prospects.<br><span>Start Better Conversations.</span></h1>
+<p class="lead">Spend less time searching and more time building relationships. Get 25 researched prospects matched to your digital marketing agency, with evidence explaining why each one may fit.</p>
+<div class="actions">
+<a class="btn primary" href="mailto:barry.ellison@comcast.net?subject=Daemon%20Scout%2025-Lead%20Pilot&body=Hi%2C%20I%27m%20interested%20in%20the%20Daemon%20Scout%2025-lead%20pilot.%0A%0AMy%20agency%20website%3A%20%0AIdeal%20clients%3A%20%0ATarget%20market%3A%20">Request Your 25-Lead Pilot ↗</a>
+<a class="btn secondary" href="#deliverables">See what you get</a>
+</div>
+<div class="small">A focused research service for agencies. You review and approve outreach before sending.</div>
+</div>
+<div class="preview">
+<div class="previewtop"><strong>YOUR PROSPECT BRIEF</strong><span class="status">● Example format</span></div>
+<h3>A clearer reason to reach out.</h3>
+<p>An illustrative preview of the information a prospect brief can contain.</p>
+<div class="leadrow"><strong>01 / Example: Growing service business</strong><span>Potential fit · Illustrative example, not a verified lead</span><div class="tag">Fit rationale + source links</div></div>
+<div class="leadrow"><strong>Opportunity angle</strong><span>A possible service gap or growth signal to investigate before outreach.</span></div>
+<div class="leadrow"><strong>Personalized first-touch draft</strong><span>A relevant opening for human review—not a generic mass email.</span></div>
+<div class="note">Examples are illustrative. Actual findings depend on the research available for each prospect.</div>
+</div>
+</div>
+
+<section id="deliverables">
+<div class="wrap">
+<div class="sectionhead"><div class="eyebrow">The deliverable</div><h2>25 prospects. More context. A better starting point.</h2><p>Not just a list of names. Each prospect is researched against the audience and criteria you provide.</p></div>
+<div class="deliver">
+<div class="item"><b><span class="check">✓</span>25 researched prospects</b><span>Businesses selected against your agreed target profile.</span></div>
+<div class="item"><b><span class="check">✓</span>Fit rationale</b><span>Why each business may be relevant to your agency.</span></div>
+<div class="item"><b><span class="check">✓</span>Evidence and source links</b><span>Review the public information behind the research.</span></div>
+<div class="item"><b><span class="check">✓</span>Opportunity angles</b><span>Potential business needs or conversation starters to investigate.</span></div>
+<div class="item"><b><span class="check">✓</span>Contact-status labels</b><span>Distinguish sourced contact details from details not verified.</span></div>
+<div class="item"><b><span class="check">✓</span>Personalized outreach drafts</b><span>Relevant first-touch messages for your review and editing.</span></div>
+</div>
+</div>
+</section>
+
+<section id="process">
+<div class="wrap">
+<div class="sectionhead"><div class="eyebrow">A simple process</div><h2>From target audience to actionable research.</h2></div>
+<div class="grid">
+<div class="card"><div class="num">STEP 01</div><h3>Define your ideal client</h3><p>Tell us your services, target industries, geography, business size, and the clients you want to win.</p></div>
+<div class="card"><div class="num">STEP 02</div><h3>Research and qualify</h3><p>We review public business information, assess fit against your criteria, and document supporting sources.</p></div>
+<div class="card"><div class="num">STEP 03</div><h3>Review and reach out</h3><p>Receive prospect briefs and tailored outreach drafts. You decide which prospects to contact and when.</p></div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+<div class="sectionhead"><div class="eyebrow">Why Daemon Scout</div><h2>Research built around your agency—not a generic database.</h2></div>
+<div class="grid">
+<div class="card"><h3>Context over volume</h3><p>Focus on a defined set of prospects with a reason they may fit, instead of an unexplained list.</p></div>
+<div class="card"><h3>Evidence you can inspect</h3><p>Source links help you review the public signals and judge whether the opportunity is worth pursuing.</p></div>
+<div class="card"><h3>Outreach with a purpose</h3><p>Use researched context to start more relevant conversations. Messages are drafts, not automatic sends.</p></div>
+</div>
+<p class="small" style="margin-top:20px">Research may use AI-assisted tools, with findings reviewed against available source material. Contact availability and verification vary by prospect. We do not guarantee replies, appointments, or sales.</p>
+</div>
+</section>
+
+<section id="pilot">
+<div class="wrap">
+<div class="offer">
+<div><div class="eyebrow">Start with a focused pilot</div><h2>See the research before scaling up.</h2><p>Request a 25-prospect pilot for your digital marketing agency. Share your ideal client profile, and we'll discuss the scope, delivery format, and price before work begins.</p><div class="small">No subscription required to request a pilot. Pricing and scope confirmed before work begins.</div></div>
+<a class="btn primary" href="mailto:barry.ellison@comcast.net?subject=Daemon%20Scout%2025-Lead%20Pilot&body=Hi%2C%20I%27d%20like%20to%20discuss%20a%20Daemon%20Scout%20pilot.%0A%0AAgency%20name%3A%20%0AWebsite%3A%20%0ATarget%20clients%3A%20%0ATarget%20industries%3A%20%0ATarget%20geography%3A%20">Request My Pilot ↗</a>
+</div>
+</div>
+</section>
+
+<section id="faq">
+<div class="wrap">
+<div class="sectionhead"><div class="eyebrow">Questions</div><h2>What to know before getting started.</h2></div>
+<details><summary>Who is Daemon Scout for?</summary><p>Our initial focus is digital marketing agencies looking for better-fit businesses to approach about their services.</p></details>
+<details><summary>What do I need to provide?</summary><p>Your website, services, ideal client profile, target industries or locations, and any exclusions or qualification criteria.</p></details>
+<details><summary>Are contact details guaranteed to be verified?</summary><p>No. We label contact information according to the evidence available. We distinguish sourced public channels from details that could not be independently confirmed.</p></details>
+<details><summary>Does Daemon Scout send emails automatically?</summary><p>No. Outreach drafts are provided for your review. You remain in control of approval and sending.</p></details>
+<details><summary>How much does the pilot cost?</summary><p>Contact us to discuss the scope and price. We will confirm pricing before starting any paid research.</p></details>
+</div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>© <span id="year">2026</span> Daemon Scout</span><span>Prospect research. Clearer context. Better conversations.</span><a href="mailto:barry.ellison@comcast.net">Contact</a></div></footer>
+</body>
+</html>
